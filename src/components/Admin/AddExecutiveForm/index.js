@@ -69,6 +69,7 @@ const AddExecutiveForm = ({ handleClose, updating, editExecId }) => {
             type='text'
             id='firstName'
             placeholder='First Name'
+            autoComplete='off'
             value={firstName}
             onChange={(e) => {
               setFirstName(e.target.value)
@@ -81,6 +82,7 @@ const AddExecutiveForm = ({ handleClose, updating, editExecId }) => {
             type='text'
             required
             id='lastName'
+            autoComplete='off'
             placeholder='Last Name'
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
@@ -102,7 +104,7 @@ const AddExecutiveForm = ({ handleClose, updating, editExecId }) => {
           <input
             type='text'
             id='gender'
-            required
+            autoComplete='off'
             placeholder='Gender'
             value={gender}
             onChange={(e) => setGender(e.target.value)}

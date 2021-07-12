@@ -69,6 +69,7 @@ const AddMedicineForm = ({ handleClose, updating, editMedicineId }) => {
             placeholder='Medicine name'
             value={medicineName}
             disabled={updating && true}
+            autoComplete='off'
             onChange={(e) => {
               setMedicineName(e.target.value)
             }}
@@ -81,6 +82,7 @@ const AddMedicineForm = ({ handleClose, updating, editMedicineId }) => {
             required
             id='manufacturer'
             placeholder='Manufacturer'
+            autoComplete='off'
             value={manufacturer}
             onChange={(e) => setManufacturer(e.target.value)}
           />
@@ -90,7 +92,7 @@ const AddMedicineForm = ({ handleClose, updating, editMedicineId }) => {
           <input
             type='number'
             id='price'
-            required
+            autoComplete='off'
             placeholder='Price'
             value={price}
             onChange={(e) => setPrice(e.target.value)}
@@ -101,7 +103,7 @@ const AddMedicineForm = ({ handleClose, updating, editMedicineId }) => {
           <input
             type='number'
             id='stock'
-            required
+            autoComplete='off'
             placeholder='Stock'
             value={stock}
             onChange={(e) => setStock(e.target.value)}
@@ -113,6 +115,7 @@ const AddMedicineForm = ({ handleClose, updating, editMedicineId }) => {
             type='text'
             id='discount'
             placeholder='Discount'
+            autoComplete='off'
             value={discount}
             onChange={(e) => setDiscount(e.target.value)}
           />

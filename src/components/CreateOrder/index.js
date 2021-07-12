@@ -66,7 +66,7 @@ const CreateOrder = ({ sales }) => {
               name='medicine'
               id='medicine'
               placeholder='Medicine Name'
-              autoComplete='false'
+              autoComplete='off'
             />
             <datalist id='medicines'>
               {inventoryList &&
@@ -92,6 +92,7 @@ const CreateOrder = ({ sales }) => {
             <input
               type='text'
               value={customerName}
+              autoComplete='off'
               onChange={(e) => setCustomerName(e.target.value)}
               placeholder='Customer Name'
             />
@@ -101,6 +102,7 @@ const CreateOrder = ({ sales }) => {
             <input
               type='text'
               value={phoneNum}
+              autoComplete='off'
               onChange={(e) => setPhoneNum(e.target.value)}
               placeholder='Contact Number'
             />
