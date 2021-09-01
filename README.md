@@ -1,3 +1,14 @@
+# Store management app for Pharmacy. 
+You can login as Admin or Sales Executive. 
+To login as Admin enter username and password as test-admin and to login as Sales Executive enter username and password
+as test-sales.
+Admin can manage medicine inventory and Sales Executive Team an create order as well. 
+Sales Executive can only create order and view order created by him.
+
+# Tech stack - React.js, Redux
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
